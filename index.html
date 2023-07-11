@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Maxima school</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <ul class="menu">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+
+        <div class="news-container">
+            <!-- Slider main container -->
+            <div class="swiper mySwiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="news-item">
+                            <img src="https://backend.learn.maxima.school/files/ebb3a325-0974-4c80-a3a8-6233af42488a.png"
+                                alt="Новость 1">
+                            <h3>Что спросить джуну — рекомендация от senior-разработчика</h3>
+                            <p>Как джуны проходят через свою первую работу? Как встраиваются в рабочие процессы, если за
+                                спиной пока
+                                только первое успешное собеседование?</p>
+                            <a href="#" class="read-more">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="news-item">
+                            <img src="https://backend.learn.maxima.school/files/0da608e0-229a-4c41-83d1-cd174b6a8d75.webp"
+                                alt="Новость 2">
+                            <h3>Как выбрать язык программирования?</h3>
+                            <p>Даже после того, как вы определились, с какой областью программирования вы хотите
+                                работать, выбор
+                                языка может оказаться неожиданно трудным.</p>
+                            <a href="#" class="read-more">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="news-item">
+                            <img src="https://backend.learn.maxima.school/files/4a1c6fc7-f2ad-44c2-bfd2-3ad0b36eb661.png"
+                                alt="Новость 3">
+                            <h3>Подборка IT-компаний, куда можно пойти, чтобы работать с космосом</h3>
+                            <p>Работать в космической отрасли со специализацией в IT — можно. Более того, многие
+                                компании в
+                                космической отрасли постоянно ищут IT-специалистов.</p>
+                            <a href="#" class="read-more">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="news-item">
+                            <img src="https://backend.learn.maxima.school/files/a382fcaa-1599-447d-818c-170bbb2b2607.png"
+                                alt="Новость 4">
+                            <h3>Что точно стоит убрать из своего резюме и профиля на хедхантере?</h3>
+                            <p>Ваше резюме и профиль на сайтах для поиска работы — это первое, что увидит работодатель,
+                                поэтому
+                                важно внимательно подойти к его составлению.</p>
+                            <a href="#" class="read-more">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="news-item">
+                            <img src="https://backend.learn.maxima.school/files/2245849a-2a00-4e0f-b374-b6532acaed76.png"
+                                alt="Новость 5">
+                            <h3>Как оформить профиль на LinkedIn?</h3>
+                            <p>LinkedIn — одна из самых популярных профессиональных социальных сетей в мире. В IT-сфере
+                                LinkedIn
+                                служит инструментом для поиска контактов.</p>
+                            <a href="#" class="read-more">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="news-item">
+                            <img src="https://backend.learn.maxima.school/files/7b0c83e9-f3e3-412e-a10e-c3a2cbbfc0ff.png"
+                                alt="Новость 6">
+                            <h3>Что такое пробные собеседования и где их проходить?</h3>
+                            <p>Собеседования, особенно впервые в новой специальности, это волнительно.</p>
+                            <a href="#" class="read-more">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <!-- <div class="swiper-scrollbar"></div> -->
+            <form action="/action_page.php">
+                <label for="fname">Имя:</label>
+                <input type="text" id="fname" name="fname" placeholder="Денис">
+                <label for="email">Почта:</label>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com">
+                <label for="message">Сообщение</label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="ваше сообщение"></textarea>
+                <input type="submit" value="Отправить">
+            </form>
+        </div>
+        <br><br><br>
+        <button id="popup">Создать пользователя</button>
+        <br><br><br>
+        <div class="modal">
+            <button class="close-btn">Закрыть</button>
+            <form action="/action_page.php">
+                <h1>Создать нового пользователя:</h1>
+                <label for="name">ФИО:</label>
+                <input type="text" id="name" name="name" placeholder="Денис Андреевич Кузнецов">
+                <label for="phone">Телефон:</label>
+                <input type="phone" id="phone" name="phone" placeholder="+7999 999 99 99">
+                <label for="email-modal">Почта:</label>
+                <input type="email-modal" id="email-modal" name="email-modal" placeholder="example@gmail.com">
+                <label for="login">Логин:</label>
+                <input type="text" id="login" name="login" placeholder="логин">
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" name="password" placeholder="*****">
+                <label for="userGroup">Группа пользователя:</label>
+                <input type="userGroup" id="userGroup" name="userGroup" placeholder="Группа">
+                <input type="submit" value="Зарегистрироваться">
+            </form>
+        </div>
+
+        <footer class="footer">
+            &copy; 2023 Maxima School. Все права защищены.
+        </footer>
+    </div>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        let swiper = new Swiper(".mySwiper", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            slidesPerView: 2,
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+                // when window width is >= 480px
+                480: {
+                    slidesPerView: 2,
+                    spaceBetween: 30
+                },
+                // when window width is >= 640px
+                640: {
+                    slidesPerView: 3,
+                    spaceBetween: 40
+                }
+            }
+        });
+    </script>
+    <script src="./modal.js"></script>
+</body>
+
+</html>
